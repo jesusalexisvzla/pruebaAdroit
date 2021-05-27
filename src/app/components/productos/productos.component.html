@@ -1,0 +1,57 @@
+<div>
+    <div class="rectangle Rectangle-Copy"></div>
+
+    <form [formGroup]="productsFrom"  class="center">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 table">
+
+            <ng-container class="table" matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Name </th>
+              <td mat-cell *matCellDef="let element">{{element.name}}</td>
+            </ng-container>
+            
+            <ng-container matColumnDef="contractName">
+              <th mat-header-cell *matHeaderCellDef> Contract Name </th>
+              <td mat-cell *matCellDef="let element"> {{element.contractName}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="branch">
+                <th mat-header-cell *matHeaderCellDef> Branch </th>
+                <td mat-cell *matCellDef="let element"> {{element.branch.name}} </td>
+              </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row (click)="seleccionarProducto(element.id, content)" *matRowDef="let element; columns: displayedColumns;"></tr>
+        </table>
+    </form>
+    
+    <ng-template #content let-modal>
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Product update</h4>
+            <button mat-flat-button class="mat-button btn-sm" aria-label="Close" (click)="modal.dismiss('Cross click')" >
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formProduct">
+                <div class="form-group">
+                    <input id="id" formControlName="id" class="form-control" name="id" type="hidden"> 
+                    <label for="name">Name</label>
+                    <div class="input-group">
+                        <input id="name" formControlName="name" class="form-control" name="name" placeholder="{{product.name}}">
+                    </div>
+                    <label  for="contractName">Contract Name</label>
+                    <div  class="input-group">
+                        <input id="contractName" formControlName="contractName" class="form-control" name="contractName" placeholder="{{product.contractName}}">
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" style="width: 100px;"(click)="comprobarEdicion(formProduct.value)">Save</button>
+                    <button type="button" class="btn btn-outline-dark" style="width: 100px; background-color: red;" (click)="eliminarProducto(product.id)">Delete</button>
+                </div>
+            </form>
+        </div>
+    </ng-template>
+
+    <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }"></ngx-loading>
+</div>

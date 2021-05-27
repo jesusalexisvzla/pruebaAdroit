@@ -1,0 +1,31 @@
+<div>
+    <div class="rectangle Rectangle-Copy"></div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="login()" center>
+        <div class="center">
+            <div class="container-lg">
+                <img src="../../../assets/logo-original-copy.png" class="Logo-Original-Copy" alt="">
+            </div>
+            <div>
+                <div>
+                    <div style="border-bottom:1px solid white">
+                        <img src="../../../assets/icon-users.png" style="margin-bottom: 5px;">
+                        <input required  formControlName="email" tabindex="1" type="text" class="useradroitoverseas" placeholder="Email or username *">
+                    </div>
+                </div>
+                <div>
+                    <div style="border-bottom:1px solid white ">
+                        <img src="../../../assets/candado.png" style="margin-bottom: 5px;">
+                        <input required type="password" formControlName="password"  class="useradroitoverseas" placeholder="Password *">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button mat-flat-button class="Rectangle-Copy-6" type="submit" color="primary" style="color: black;">LOG IN</button>
+                <div class="Forgot-Password" style="text-align: center;">Forgot Password?</div>
+            </div>
+        </div>
+    </form>
+    
+    <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }"></ngx-loading>
+</div>

@@ -1,0 +1,120 @@
+.rectangle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: contain;
+    background-image: radial-gradient(circle at 50% 48%, rgba(98, 156, 196, 0.25), rgba(32, 45, 66, 0.51) 91%);
+}
+.Rectangle-Copy {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: contain;
+    background-color: #202d42;
+}
+.center {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.Logo-Original-Copy {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 161px;
+    object-fit: contain;
+    background-color: #ffffff00;
+}
+.iconusers {
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 21px;
+    margin: 32px 5px 0px 18px;
+    object-fit: contain;
+    background-color: #ffffff00;
+}
+.useradroitoverseas {
+    width: 315px;
+    height: 21px;
+    margin: 35px 5px 0px 7px;
+    font-family: Sarabun;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.candado {
+    width: auto;
+    height: 21px;
+    margin: 32px 5px 0px 18px;
+    object-fit: contain;
+    background-color: #ffffff00;
+}
+.Password-Copy {
+    background: none;
+    color: white;
+    border: none;
+    width: 315px;
+    height: 21px;
+    margin: 35px 5px 8px 7px;
+    font-family: Sarabun;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.Rectangle-Copy-6 {
+    width: 365px;
+    height: 36px;
+    margin: 23px 1px 15px 0px;
+    font-family: Sarabun;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+.Forgot-Password {
+    height: 16px;
+    font-family: Sarabun;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+input[type="text"]
+{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    color: #ffffff;
+}   
+input[type="text"]::placeholder {
+    color: white;
+}
+input[type="password"]
+{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    color: #ffffff;
+}   
+input[type="password"]::placeholder {
+    color: white;
+}

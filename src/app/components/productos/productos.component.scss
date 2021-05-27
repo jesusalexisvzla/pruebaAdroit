@@ -1,0 +1,53 @@
+.rectangle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: contain;
+    z-index: -2;
+    background-image: radial-gradient(circle at 50% 48%, rgba(98, 156, 196, 0.25), rgba(32, 45, 66, 0.51) 91%);
+}
+.Rectangle-Copy {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: contain;
+    background-color: #202d42;
+}
+.center {
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    margin-top: 70px;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.Rectangle-Copy-6 {
+    width: 365px;
+    height: 36px;
+    margin: 0px 0px 15px 0px;
+    font-family: Sarabun;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+.table{
+    width: 98%;
+    height: auto;
+    font-family: Sarabun;  
+    border-radius: 2px;
+    
+}
+.mat-row .mat-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid black;
+    cursor: pointer;
+}
+.mat-row:hover .mat-cell {
+    background-color: whitesmoke;
+}
